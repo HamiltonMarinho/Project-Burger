@@ -3,14 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Burger-Em Construção</title>
-    <style>
-        body {font-family: sans-serif; text-align: center; padding: 50px;}
-        h1 {color: #007bff;}
-    </style>
+    <title>Project Burger</title>
+    <script src="https://kit.fontawesome.com/9ddec1d614.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Project Burger</h1>
-    <p>Iniciando nosso controle de versão</p>
+    <header class="cabeçalho-site">
+        <nav class="navbar">
+            <a href="#" class="logo">🍔PROJECT BURGER🍔</a>
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#cardapio">Cardapio</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#depoimentos">Depoimentos</a>
+                </li>
+                <li>
+                    <a href="#reserva">Reserva</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+            <a href="#pedir" class="btn btn-nav">Peca Agora</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">...</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-texto">
+                    <h1>Burgers deliciosos e suculentos 🤤</h1>
+                    <p>Pao 7 graos, carne 200g grelhada na hora e vegetais fresquinhos.</p>
+                    <a href="#cardapio" class="btn btn-primary">Confira Aqui!</a>
+                </div>
+                <div class="hero-image"><img src="assets/icons/burger-classico.svg" alt="Ilustração de um hamburguer clássico"></div>
+            </div>
+        </section>
+        <section class="menu" id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu-cards">
+                <article class="menu-card">
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-classico.svg" alt="Ilustração de um hamburguer clássico">
+                    </div>
+                    <h3>Clássico</h3>
+                    <p>Pao brioche, carne 160g grelhada e salada fresquinha</p>
+                    <span class="preco">R$24,90</span>
+                    <button class="add-to-card" data-name="Classico" data-price="R$24.90">Adicionar a Sacola</button>
+                </article>
+                <article class="menu-card">
+                    <span class="badge">Mais Pedido 🤤</span>
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-bacon.svg" alt="Ilustração de um hamburguer com bacon">
+                    </div>
+                    <h3>Bacon</h3>
+                    <p>Um Clássico ainda melhor, tem bacon!</p>
+                    <span class="preco">R$34,90</span>
+                    <button class="add-to-card" data-name="Bacon" data-price="R$34.90">Adicionar a Sacola</button>
+                </article>
+                <article class="menu-card">
+                    <div class="menu-icon">
+                        <img src="assets/icons/burger-veggie.svg" alt="Ilustração de um hamburguer vegano">
+                    </div>
+                    <h3>Veggie</h3>
+                    <p>Para aqueles com gosto refinado, um Clássico com tofu no lugar da carne</p>
+                    <span class="preco">R$29,90</span>
+                    <button class="add-to-card" data-name="Veggie" data-price="R$29.90">Adicionar a Sacola</button>
+                </article>
+                <article class="menu-card">
+                    <div class="menu-icon menu-icon-combo">
+                        <img src="assets/icons/fritas.svg" alt="Ilustração de fritas">
+                        <img src="assets/icons/bebida.svg" alt="Ilustração de bebida">
+                    </div>
+                    <h3>Combo Fritas/Bebida</h3>
+                    <p>Porção de Fritas sequinhas num combo com 500ml de Refrigerante trincando de gelado</p>
+                    <span class="preco">R$15,90</span>
+                    <button class="add-to-card" data-name="Combo" data-price="R$15.90">Adicionar a Sacola</button>
+                </article>
+            </div>
+        </section>
+        <section class="about" id="Sobre">
+            <div class="about-image">
+                <img src="assets/images/sobre-burger.jpg" alt="Cozinha do Project">
+            </div>
+            <div class="about-text">
+                <span class="section-label">Nossa História</span>
+                <h2 class="section-title">Comida de boteco, com capricho de restaurante</h2>
+                <p class="section-text">O Chama Burger começou numa churrasqueira de quintal, testando receitas com os amigos. Hoje, o método continua o mesmo: carne grelhada na brasa, pão fresco
+                    do dia e ingredientes comprados na feira — só que agora pra atender o bairro inteiro</p>
+                <a href="#cardapio" class="link-arrow">Ver cardápio completo ➡️</a>
+            </div>
+        </section>
+        <section class="depoimentos" id="Depoimentos">
+            <h2>Quem prova, volta!</h2>
+            <div class="depoimentos-cards">
+                <article class="depoimentos-card">
+                    <img src="assets/images/avatar-pc.png" alt="Foto de Pedro Costa" class="avatar">
+                    <p class="citar">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."</p>
+                    <p class="autor">Pedro Costa <span>- Cliente Frequente</span></p>
+                </article>
+                <article class="depoimentos-card">
+                    <img src="assets/images/avatar-mr.png" alt="Foto de Marina Rocha" class="avatar">
+                    <p class="citar">"O veggie surpreende até quem come carne. Peço toda semana com a galera do trabalho."</p>
+                    <p class="author">Marina Rocha <span>— cliente frequente</span></p>
+                </article>
+                <article class="depoimentos-card">
+                    <img src="assets/images/avatar-tl.png" alt="Foto de Thiago Lima" class="avatar">
+                    <p class="citar">"Pedi pro aniversário de 20 pessoas e todo mundo elogiou. Entrega rápida também."</p>
+                    <p class="author">Thiago Lima <span>— cliente de evento</span></p>
+                </article>
+            </div>
+        </section>
+        <section class="reserva" id="Reserva">
+            <h2>Reserve sua mesa</h2>
+            <p>Prefere comer no salão? Informe seus dados que centramos em contato.</p>
+            <form class="reserva-form" id="reservaForm">
+                <div class="form-row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-row">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                </div>
+                <div class="form-row">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-row">
+                    <label for="pessoas">Número de Pessoas</label>
+                    <select name="pessoas" id="pessoas">
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5+">5 ou mais</option>
+                    </select>
+                </div>
+                <div class="form-row form-row-full">
+                    <label for="mensagem">Observações (Opcional)</label>
+                    <textarea name="mensagem" id="mensagem" rows="3" placeholder=" Alguma preferência ou restrição alimentar?"></textarea>
+                </div>
+                <div class="form-row form-roll-full">
+                    <label for="foto">Foto de referência (Opcional)</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                    <img id="fotoPreview"class="foto-preview" alt="Prévia da imagem selecionada" hidden>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Confirmar reserva</button>
+            </form>
+            <div class="reservation-confirmation" id="reservationConfirmation"></div>
+        </section>
+        <section class="cta" id="pedir">
+            <h2>Bateu a fome?</h2>
+            <p>Peça pelo delivery ou venha comer no salão - Abrimos todos os dias, das 18h as 23h</p>
+            <a href="#" class="btn btn_accent">Peça pelo WhatsApp</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-info">
+            <div>
+                <h3>&copy; 2026 Project Burguer - Rua das Brasas, 123, São Caetano do Sul</h3>
+                <p class="footer-hours">Todos os dias, das 18h as 23h</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#" arial-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                <li><a href="#" arial-label="Facebook"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+                <li><a href="#" arial-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+                <li><a href="#" arial-label="Tiktok"><i class="fa-brands fa-tiktok"></i><span>Tiktok</span></a>
+                <li><a href="#" arial-label="Ver no Mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no Mapa</span></a>
+            </ul>
+        </div>
+    </footer>
+    <div class="cart-summary" id="cartSummary">
+        <span class="cart-icon" id="contador">🛒</span>
+        <span id="cartCount">0</span> Itens - <span id="cartTotal">R$0,00</span>
+    </div>
 </body>
 </html>
